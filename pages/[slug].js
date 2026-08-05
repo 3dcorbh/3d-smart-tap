@@ -41,6 +41,7 @@ export default function ClientePage({ cliente }) {
     whatsapp_url,
     instagram_url,
     pix_key,
+    localizacao_url,
   } = cliente;
 
   const links = [
@@ -69,13 +70,19 @@ export default function ClientePage({ cliente }) {
       href: whatsapp_url,
       icon: "💬",
       label: "Chamar no WhatsApp",
-      sub: "Dúvidas e Sugestões,",
+      sub: "Reservas e encomendas",
     },
     instagram_url && {
       href: instagram_url,
       icon: "📷",
       label: "Seguir no Instagram",
       sub: instagram_url.replace("https://instagram.com/", "@"),
+    },
+    localizacao_url && {
+      href: localizacao_url,
+      icon: "📍",
+      label: "Localização",
+      sub: "Compartilhar ou traçar rota",
     },
     pix_key && {
       href: `#`,
@@ -201,7 +208,7 @@ export default function ClientePage({ cliente }) {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 30, fontSize: 10.5, opacity: 0.3 }}>
-          3D SMART TAP por 3DCOR · @3dcorbh
+          plaquinha por 3D Cor BH · @3dcorbh
         </div>
       </div>
     </div>
