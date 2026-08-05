@@ -2,7 +2,7 @@
 
 Cada cliente (restaurante) ganha uma página em `seusite.vercel.app/nome-do-cliente`,
 com os dados vindos de uma planilha do Google Sheets. Você edita a planilha,
-a página atualiza sozinha — não precisa mexer em código depois de configurado.
+a página atualiza sozinha — não precisa mexer em código depois de configurado. 
 
 ## Passo 1 — Criar a planilha
 
