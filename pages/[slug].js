@@ -33,6 +33,7 @@ export default function ClientePage({ cliente }) {
     cor_primaria = "#173A2E",
     cor_secundaria = "#E7A82E",
     inicial,
+    logo_url,
     cardapio_url,
     wifi_ssid,
     wifi_senha,
@@ -114,10 +115,20 @@ export default function ClientePage({ cliente }) {
             fontWeight: "bold",
             color: cor_primaria,
             fontSize: 34,
+            overflow: "hidden",
           }}
         >
-          {inicial || nome?.[0] || "?"}
+          {logo_url ? (
+            <img
+              src={logo_url}
+              alt={`Logo ${nome}`}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          ) : (
+            inicial || nome?.[0] || "?"
+          )}
         </div>
+
 
         <div style={{ textAlign: "center", marginBottom: 4 }}>
           <h1 style={{ fontSize: 36, margin: 0, color: cor_secundaria }}>
