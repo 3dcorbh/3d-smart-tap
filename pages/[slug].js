@@ -48,29 +48,29 @@ export default function ClientePage({ cliente }) {
     cardapio_url && {
       href: cardapio_url,
       icon: "🍽️",
-      label: "Ver cardápio",
-      sub: "Pratos, porções e bebidas",
+      label: "Cardápio",
+      sub: "Confira nossos pratos e bebidas",
       primary: true,
     },
     wifi_ssid && {
       href: `#`,
       icon: "📶",
-      label: "Ver senha do Wi-Fi",
-      sub: `Rede: ${wifi_ssid} · toque para copiar a senha`,
+      label: "Wi-Fi grátis",
+      sub: `Rede: ${wifi_ssid} · Toque para copiar a senha`,
       isWifi: true,
       wifiSenha: wifi_senha,
     },
     google_review_url && {
       href: google_review_url,
       icon: "⭐",
-      label: "Avaliar no Google",
-      sub: "Leva 20 segundos, ajuda muito",
+      label: "Deixe sua avaliação",
+      sub: "Sua opinião é muito importante para nós",
     },
     whatsapp_url && {
       href: whatsapp_url,
       icon: "💬",
-      label: "Chamar no WhatsApp",
-      sub: "Reservas e encomendas",
+      label: "Fale conosco no WhatsApp",
+      sub: "Reservas,dúvidas e sugestões",
     },
     instagram_url && {
       href: instagram_url,
@@ -208,7 +208,7 @@ export default function ClientePage({ cliente }) {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 30, fontSize: 10.5, opacity: 0.3 }}>
-          plaquinha por 3D Cor BH · @3dcorbh
+          3D SMART TAP por 3DCOR · @3dcorbh
         </div>
       </div>
     </div>
