@@ -201,7 +201,7 @@ export default function ClientePage({ cliente }) {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 30, fontSize: 10.5, opacity: 0.3 }}>
-          plaquinha por 3D Cor BH · @3dcorbh
+          3D SMART TAP por 3DCOR · @3dcorbh
         </div>
       </div>
     </div>
