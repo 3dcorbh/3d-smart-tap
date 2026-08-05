@@ -69,7 +69,7 @@ export default function ClientePage({ cliente }) {
       href: whatsapp_url,
       icon: "💬",
       label: "Chamar no WhatsApp",
-      sub: "Reservas e encomendas",
+      sub: "Dúvidas e Sugestões,",
     },
     instagram_url && {
       href: instagram_url,
