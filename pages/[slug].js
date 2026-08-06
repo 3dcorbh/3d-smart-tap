@@ -28,6 +28,7 @@ export async function getServerSideProps({ params }) {
 
 export default function ClientePage({ cliente }) {
   const {
+    slug,
     nome,
     tagline,
     cor_primaria = "#173A2E",
@@ -46,12 +47,12 @@ export default function ClientePage({ cliente }) {
 
   const links = [
     cardapio_url && {
-      href: cardapio_url,
-      icon: "🍽️",
-      label: "Cardápio",
-      sub: "Confira nossos pratos e bebidas",
-      primary: true,
-    },
+  href: `/${slug}/cardapio`,
+  icon: "🍽️",
+  label: "Cardápio",
+  sub: "Confira nossos pratos e bebidas",
+  primary: true,
+},
     wifi_ssid && {
       href: `#`,
       icon: "📶",
