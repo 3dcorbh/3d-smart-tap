@@ -78,7 +78,7 @@ export default function CardapioPage({ cliente }) {
             marginBottom: 20,
           }}
         >
-          Cardápio — {nome}
+          {nome}
         </h1>
 
         <div
