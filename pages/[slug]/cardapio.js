@@ -99,23 +99,6 @@ export default function CardapioPage({ cliente }) {
             }}
           />
         </div>
-
-        <Link
-          href={`/${slug}`}
-          style={{
-            display: "block",
-            width: "fit-content",
-            margin: "24px auto 0",
-            padding: "12px 20px",
-            borderRadius: 10,
-            background: cor_secundaria,
-            color: cor_primaria,
-            textDecoration: "none",
-            fontWeight: 700,
-          }}
-        >
-          ← Voltar para a página inicial
-        </Link>
       </div>
     </div>
   );
